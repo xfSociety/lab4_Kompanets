@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅parallax_Kompanets✅</title>
+    <style media="screen">
+    body, html {
+        height: 100%;
+        background-color: #034253;
+        font-family: sans-serif;
+        font-style: italic;
+        line-height: normal;
+    }
+    .parallax {
+        background-image: url('fon_parallax.jpg');
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+    }
+    @media only screen and (max-device-width: 1366px) { /*для вимкнення відображення паралаксу на телефонах та планшетах*/
+        .parallax {
+            background-attachment: scroll;
+        }
+    }
+    .div_center{
+      display:block;
+      background-image: linear-gradient(#034253, #08C1F4);
+      font-size:36px;
+      width: 30%
+    }
+    .logo{
+      height: 80px;
+      width: 80px;
+      border-radius: 60px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    .info{
+      display:flex;
+      background-image: linear-gradient(#034253, #08C1F4);
+      font-size:36px;
+      width: 100%;
+      margin-top:100px;
+    }
+    .foto{
+      width: 700px;
+      height: 500px;
+
+    }
+    .p_info{
+      font-size: 36px;
+      color: white;
+    }
+    .flex_container{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .links{
+      margin-top: 40px;
+    }
+    .link1{
+      font-size: 24px;
+      background-image: linear-gradient(#034253, #08C1F4);
+    }
+    .link2{
+      font-size: 24px;
+      background-image: linear-gradient(#034253, #08C1F4);
+      float:right;
+    }
+    A:hover{
+      color:red;
+    }
+     @media (max-width: 1366px) {
+    .foto{
+    width: 300px;
+    height: 250px;
+    }
+    .div_center{
+      font-size: 12px;
+       }
+     .info{
+      font-size: 12px;
+      }
+       .p_info{
+      font-size: 16px;
+       }
+       .link1{
+      font-size: 14px;
+    }
+    .link2{
+      font-size: 14px;
+    }
+      }
+    </style>
+    </head>
+    <body>
+    <div class="parallax">
+      <div class="div_center">Дослідіть неймовірний науково-фантастичний всесвіт гри Destiny 2</div>
+      <img class="logo" src="destiny2logo.png" alt="destiny"/>
+      <div class="info">
+        Пориньте у світ Destiny 2, щоб досліджувати таємниці Сонячної системи і випробувати на собі можливості приголомшливого багатокористувацького шутера. Вступайте до лав мільйонів гравців, створіть свого Вартового і почніть збирати унікальну зброю і броню, яке дозволить вам створити неповторного персонажа і розробити власний ігровий стиль. Беріть участь в складних спільних завданнях або змагайтеся в різних режимах PvP-гри. Пориньте в сюжет Destiny 2, що безперервно розвивається, разом з друзями або вирушайте до зірок поодинці.
+        </div>
+        <p class="p_info">
+          Фото з гри:
+          </p>
+          <div class="flex_container">
+            <div>
+              <img class="foto" src="play.png" alt="destiny"/>
+              </div>
+              <div>
+                <img class="foto" src="play2.png" alt="destiny"/>
+                </div>
+            </div>
+            <div class="links">
+
+              <span class="link1"><a href="index.html">Повернутись на головну сторінку</a></span>
+              <span class="link2"><a href="https://www.playstation.com/uk-ua/games/destiny-2/">На сайт з грою</a></span>
+
+              </div>
+
+    </div>
+
+    <div class="parallax"></div>
+    </body>
+    </html>
+</html>

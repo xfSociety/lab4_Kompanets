@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅responsive-flex✅</title>
+    <style media="screen">
+      nav{
+  background-color:royalblue; /*задав колір фону для nav бару*/
+  height:75px; /*висота 75рх*/
+  font-family: sans-serif;
+  font-style: italic;
+}
+header{
+  background-color:lightskyblue; /*задав колір фону для header*/
+  height:400px; /*задав висоту в 400рх*/
+  text-align: center;
+  font-family: sans-serif;
+  font-style: italic;
+}
+section{
+  background-color: gray; /*задав колір для section*/
+  height:500px; /*висота 500рх*/
+  margin-top:75px; /*відступ зверху в 75 рх*/
+  margin-bottom:75px; /*відступ знизу в 75рх*/
+  margin-left:100px; /*відступ зліва в 100рх*/
+  margin-right:100px; /*відступ праворуч на 100рх*/
+  font-family: sans-serif;
+  font-style: italic;
+}
+.silver{
+  height:40px; /*висота в 40 рх*/
+  background-color: silver; /*колір для div*/
+  font-family: sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 150%;
+}
+footer{
+  height:100px; /*висота в 100рх*/
+  background-color: black; /*колір для footer чорний*/
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 130%;
+  text-align: center;
+  padding-top: 50px;
+  color: gray;
+}
+.yellow_paragraph{
+  height:200px; /*Висота висота 200рх*/
+  background-color:khaki; /*Колір фону - хакі*/
+  margin-bottom:75px; /*Відступ знизу в 75рх*/
+  text-align: center;
+  font-size: 150%;
+}
+#flex-container{ /*Створив флекс контейнер для наших поранчевих боксів*/
+  display:flex; /*Відображення флекс*/
+  justify-content: space-between;; /*Розміщення контенту - початок*/
+}
+.orange_box1{
+  height:200px; /*висота помаранчевого бокса виставив 225, бо в мене з 200рх не виходило, мало не вірний результат*/
+  width: 48%; /*Ширина 48% від батьківського елемента*/
+  background-color: tomato; /*колір - томато*/
+
+}
+.orange_box2{
+  height:200px; /*висота помаранчевого бокса виставив 225, бо в мене з 200рх не виходило, мало не вірний результат*/
+  width: 48%; /*Ширина 48% від батьківського елемента*/ /*Відступ праворуч 25рх*/
+  background-color: tomato; /*колір - томато*/
+}
+.nav_bar{
+  padding: 15px;
+  font-size: 32px;
+}
+.back{
+padding: 10px;
+font-size: 32px;
+float:right;
+}
+.div_header_upper{
+  font-size: 200%;
+  padding-top: 150px;
+}
+.div_header_main{
+  font-size: 250%;
+}
+.bigger{
+  font-size: 150%;
+}
+A:visited {
+    color: #502502;
+  }
+A:hover{
+  color:#B7580A;
+}
+.div_under_orange{
+  font-size: 150%;
+  margin-left: 20%;
+}
+.div_under_orange2{
+  font-size: 150%;
+  margin-right: 15%;
+}
+@media (max-width: 1000px) {
+.nav_bar{
+  font-size: 20px;
+}
+.back{
+  font-size: 20px;
+}
+.div_header_upper{
+  font-size: 150%;
+}
+.div_header_main{
+  font-size: 200%;
+}
+.yellow_paragraph{
+  font-size: 115%;
+}
+.div_under_orange{
+  font-size: 125%;
+}
+.div_under_orange2{
+  font-size: 125%;
+}
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <span class="nav_bar">PC Portal</span>
+      <span class="back"><a href="index.html">Повернутись на головну сторінку</a></span>
+    </nav> <!--Навігаційний заголовок-->
+  <header>
+<div class="div_header_upper">
+  Комп`ютер - це індивідуальний підхід до кожного
+</div>
+<div class="div_header_main">
+  Кompanets PC
+</div>
+  </header> <!--Заголовок-->
+  <section> <!--Головний вміст-->
+    <p class="yellow_paragraph"><b class="bigger">Характеристики Kompanets PC:</b><br/>
+    <b>GPU:</b> GTX 1660 Super
+    <b>CPU:</b> Ryzen 5 3600
+    <b>Motheboard:</b>MSI B450 Tomahawk Max
+    <b>RAM:</b> DDR4 2x8GB/3200 G.Skill Ripjaws V Black
+    <b>Power:</b> Chieftec Proton BDF-650C 650W
+    <b>SSD1:</b> Samsung Samsung 860 Evo-Series 512GB 2.5"
+    <b>SSD2:</b> Samsung 970 Evo series 256GB M.2 PCIe 3.0 x4 V-NAND TLC</p> <!--За допомогою селектору класу до тегу <p> створив Жовтий параграф, як було вказано в завданні-->
+    <div id="flex-container"> <!--за допомогою <div> та ID селектору створив flex бокси-->
+      <div class="orange_box1"><img src="PC.jpg" alt="My photo" width="100%" height="100%" /></div> <!--Перший помаранчевий бокс-->
+      <div class="orange_box2"><img src="GPU.png" alt="My photo" width="100%" height="100%" /></div> <!--Другий помаранчевий бокс-->
+    </div>
+    <div id="flex-container">
+      <div class="div_under_orange">Фото ПК</div>
+      <div class="div_under_orange2">Фото Відеокарти</div>
+    </div>
+  </section> <!--Кінець головного вмісту-->
+  <div class="silver">Бажаєте дізнатись більше про ПК та комплектючі окремо?</div> <!--prefooter за допомогою селектору класу-->
+  <footer>@Designed by Kompanets Danylo</footer> <!--Наш footer-->
+  </body>
+</html>

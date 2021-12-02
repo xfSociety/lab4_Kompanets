@@ -1,0 +1,99 @@
+body{
+  font-family: sans-serif;
+  font-style: italic;
+  line-height: normal;
+}
+.logo{
+  height: 80px;
+  width: 80px;
+  border-radius: 55px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.logo2{
+  height: 80px;
+  width: 80px;
+  border-radius: 55px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.index_div_center{
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.center_div{
+  text-align: center;
+  padding: 20px;
+}
+hr{
+  border-style:none;
+  border-top-style: dotted;
+  border-color: SandyBrown;
+  border-width: 13px;
+  width: 3%;
+}
+.blueback{
+  background-color: #00BFFF;
+}
+.exsansserif { font-family: Arial, Helvetica, sans-serif;}
+.Mainphoto{
+  width: 350px;
+  height: 450px;
+  cursor: pointer;
+}
+.blueH2{
+    background-color: #00BFFF;
+    width: 370px;
+}
+.auqaH3{
+  background-color: #00FFFF;
+  width: 280px;
+}
+.bisqueH{
+  background-color: #FFE4C4;
+}
+#strongh4{
+  background-color: SandyBrown;
+  width: 130px;
+}
+A:visited {
+    color: #502502;
+  }
+A:hover{
+  color:#B7580A;
+}
+.selfie{
+border-style: groove;
+border-width: 10px;
+border-color:#00FFFF;
+}
+.contact{
+  background-image: url(https://images.wallpaperscraft.ru/image/single/voda_goluboj_prozrachnyj_198604_1920x1080.jpg);
+}
+@media (max-width: 1000px) {
+  .logo{
+    height: 60px;
+    width: 60px;
+  }
+.logo2{
+  height: 60px;
+  width: 60px;
+}
+body{
+  font-size: 14px;
+}
+.Mainphoto{
+  width: 300px;
+  height: 400px;
+}
+hr{
+  border-style:none;
+  border-top-style: dotted;
+  border-color: SandyBrown;
+  border-width: 10px;
+  width: 9%;
+}
+}
